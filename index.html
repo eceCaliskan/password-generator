@@ -10,31 +10,50 @@
     <title>Password Generator</title>
 </head>
 
-<body class="text-center">
+<body class="text-center" id="center">
     <div id="heading">
         <h1>Generate my password</h1>
     </div>
-    <div class="selection pt-5">
+    <div class="selection pt-5 ">
 
         <label for="passwlength">Password length:</label>
         <input id="passwlength" type="number"  >
         <br>
+        <br>
         <label for="specialChar">Special characters included:</label>
         <input id="specialChar" type="checkbox">
+        <br>
+
         <label for="number">Numbers included:</label>
         <input id="number" type="checkbox">
+        <br>
         <label for="CapLetter">Capital letters included:</label>
         <input id="CapLetter" type="checkbox">
-        <br class="pt-xl-5">
-        <button id="button">Generate my password</button>
-        <button id="reset">Reset</button>
+        <br>
+        <br>
+        <button id="button" class="btn btn-success">Generate my password</button>
+        <button id="reset" class="btn btn-danger">Reset</button>
         <br>
         <br>
         <br>
 
         <script src="js/index.js"></script>
     </div>
-    <p id="pass"></p>
+    <div id="p">
+
+        <p id="pass"></p>
+    </div>
+
 </body>
 
 </html>
+
+<style>
+    #center {
+        padding-top: 200px;
+    }
+    
+    #p {
+        background-color: whitesmoke;
+    }
+</style>

@@ -6,6 +6,7 @@ const capitalletter = document.querySelector('#CapLetter');
 const password = document.getElementById('pass');
 const button = document.querySelector('#button');
 const buttonreset = document.querySelector('#reset');
+const p = document.querySelector('#p');
 
 
 //arrays
@@ -40,7 +41,10 @@ button.addEventListener('click', function() {
             document.getElementById("pass").innerHTML += numbers[generateRandom(numbers.length)];
         }
     }
+    document.getElementById('p').style.height = "100px";
+    document.getElementById('p').style.paddingTop = "10px";
 })
+
 
 /**
  * removes the generated password 
